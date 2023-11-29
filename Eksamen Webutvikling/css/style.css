@@ -1,0 +1,323 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    "header header header" 
+    "main main main"
+    "footer footer footer";
+
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr; 
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    max-width: 1600px; /* Maks bredde på nettsiden ihht oppgave */
+
+}
+
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;   
+ 
+}
+
+
+.linktekst{
+    padding: 10px;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+}
+
+.link_knapp1 {  
+    display: inline-block; 
+    padding: 5px 10px; 
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    background-color: #e6bd43; 
+    border: 2px solid #e6bd43; 
+
+}
+
+.link_knapp1:hover { /*Hover blir svart versjon */
+    color: #e6bd43;
+    background-color: black;
+}
+
+.link_knapp2 {
+    display: inline-block; 
+    padding: 10px 15px; 
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    background-color: white; 
+    border: 2px solid black; 
+}
+
+.link_knapp2:hover {
+    background-color: #000000;
+    color: #e6bd43;
+}
+
+
+main{
+    grid-area: main;
+}
+
+
+footer {
+    grid-area: footer;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #252525;
+    text-align: center;
+    color: white
+    
+}
+
+.some_link {
+    color: white;
+    font-size: 140%;
+
+}
+
+.some_link:visited {
+    color: white;
+
+}
+
+h1 {
+    font-size: xx-large;
+    font-weight: bolder; 
+
+}
+
+.skip-to-content {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffffff;
+}
+
+
+/* Index */
+
+
+.compelling {
+    background-color: lightgrey;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.subheading {
+    padding-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+.aboutcompany {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e6bd43;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #ccc; 
+    padding: 20px;
+}
+
+.aboutcompany img {
+    margin-right: 20px; /* mellomrom mellom bildet og teksten */
+}
+
+.about_us_knapp {
+    display: inline-block; 
+    padding: 10px 15px; 
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+
+}
+
+.about_us_knapp:hover {
+    background-color: black;
+    color: #e6bd43;
+}
+
+.services_header{
+    text-align: center;
+}
+
+.our_services {
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+   
+}
+
+
+
+.newsletter{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: rgb(230, 223, 223)
+}
+
+
+/* Producuts/portfolio side*/
+
+
+.portfolioh2 {
+    padding-top: 40px;
+    border-bottom: 3px solid #e6bd43;
+    display: block;
+    padding-bottom: 10px;  
+    
+}
+
+.branding_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+    .flex-item1,
+    .flex-item2,   
+    .flex-item3,
+    .flex-item4 {
+        padding: 15px;
+        transition: transform 1.25s;
+    }
+    
+    .flex-item1:hover,
+    .flex-item2:hover,
+    .flex-item3:hover,
+    .flex-item4:hover {
+        transform: scale(1.1);
+
+    }
+
+
+
+/*About us side */
+
+.aboutcompany2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #ccc;
+    padding: 20px;
+    position: relative;
+}
+
+.aboutcompany2 article {
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+}
+
+.clients {
+    display: flex;
+    background-color: #e6bd43;
+    text-align: center;
+    flex-direction: row; 
+    align-items: center; /* på tvers */
+    justify-content: center; /* Sentrer innholdet horisontalt */
+    padding: 20px; 
+}
+
+.contactush2 {
+    text-align: center;
+}
+.contactus {
+    display: flex;
+    flex-direction: row;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.contactinfo {
+    width: 50%;
+}
+label, input, textarea {
+    margin-bottom: 10px; 
+}
+
+.clients h3 {
+    align-self: center;
+}
+
+.clients img {
+    margin-right: 10px; 
+}
+
+.kart {
+    padding-top: 100px;
+    max-width: 1600px;
+
+}
+
+/* Mobilvisning */
+
+
+@media only screen and (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        text-align: center;
+        flex-direction: column;
+    }
+
+}
+
+
